@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(175, 91, 128, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#form {
+    width: 300px;
+    height:600px;
+    margin: 100px auto;
+    border: 1px solid black;
+    padding: 25px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+}
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #020024;
+    text-align: center;
+}
+
+button {
+    width: 30%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #4379F2;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: blueviolet;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+.input-group .error {
+    color: red;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.input-group.success input {
+    border-color: green;
+}
+
+.input-group.error input {
+    border-color: red;
+}
+@media all and (max-width:360px){
+    #form{
+        width:65%;
+        height:500px;
+    }
+    #heading{
+        font-size: 1.5em;
+    }
+    input{
+        font-size: 0.8em;
+    }
+    .input-group .error{
+        font-size: 0.7em;
+    }
+    button{
+        font-size: 0.8em;
+        width:100px;
+      
+    }
+}
